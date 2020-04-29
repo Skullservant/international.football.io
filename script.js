@@ -198,7 +198,7 @@ const criterion_loader= function(){
 
 //Launch-time runner
 whenDocumentLoaded(() => {
-	flag_loader("../data/final_flags.csv");
+	flag_loader("data/final_flags.csv");
 	criterion_loader();
 	document.getElementById("background").style.height="1540%";
 });
