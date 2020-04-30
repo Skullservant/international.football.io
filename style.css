@@ -85,6 +85,7 @@ svg {
 	float: left;
 	text-align: center;
 	visibility: hidden;
+	vertical-align: middle;
 }
 
 /* FLAG SLIDER STYLE */
