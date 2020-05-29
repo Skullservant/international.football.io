@@ -449,9 +449,9 @@ const load_map = function(){
 
 			const update_button=document.getElementById("generate_container");
 			update_button.addEventListener("click", function(e){
+				old_stat_box[feature.properties.name]=stat_box[feature.properties.name]
 				feature.properties.val=old_stat_box[feature.properties.name];
 				layer.setStyle(style(feature));
-				old_stat_box[feature.properties.name]=stat_box[feature.properties.name]
 				const max_display=document.getElementById("max_display");
 				const min_display=document.getElementById("min_display");
 				max_display.innerHTML= max===0 ? "" : max;

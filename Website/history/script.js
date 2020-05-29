@@ -10,7 +10,7 @@ function whenDocumentLoaded(action) {
 
 //Launch-time runner
 whenDocumentLoaded(() => {
-    data_loader("../data/final_results.csv");
+    data_loader("data/final_results.csv");
 });
 
 let results;
