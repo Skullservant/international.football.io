@@ -272,12 +272,12 @@ $(function() {
         triggerHook: "1",
     })
         .setTween(new TimelineMax().add([
-            TweenLite.from(".box07", 1, { y: 150, opacity: 0 }),
-            TweenLite.from(".box07 h2", 1, { x: -150, opacity: 0 }).delay(1),
-            TweenLite.from(".box07 p", 1, { x: -250, opacity: 0 }).delay(1),
-            TweenLite.from(".box08", 1, { opacity: 0 }),
-            TweenLite.from(".box08 h2", 1, { x: 150, opacity: 0 }).delay(1),
-            TweenLite.from(".box08 p", 1, { x: 250, opacity: 0 }).delay(1),
+            TweenLite.from(".box01", 1, { y: 150, opacity: 0 }),
+            TweenLite.from(".box01 h2", 1, { x: -150, opacity: 0 }).delay(1),
+            TweenLite.from(".box01 p", 1, { x: -250, opacity: 0 }).delay(1),
+            TweenLite.from(".box02", 1, { opacity: 0 }),
+            TweenLite.from(".box02 h2", 1, { x: 150, opacity: 0 }).delay(1),
+            TweenLite.from(".box02 p", 1, { x: 250, opacity: 0 }).delay(1),
         ]))
     animated_images_gif.addTo(scrollMagicController)
 

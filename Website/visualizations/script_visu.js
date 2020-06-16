@@ -449,7 +449,7 @@ const load_map = function(){
 
 			const update_button=document.getElementById("generate_container");
 			update_button.addEventListener("click", function(e){
-				old_stat_box[feature.properties.name]=stat_box[feature.properties.name]
+				old_stat_box[feature.properties.name]=stat_box[feature.properties.name];
 				feature.properties.val=old_stat_box[feature.properties.name];
 				layer.setStyle(style(feature));
 				const max_display=document.getElementById("max_display");
@@ -664,16 +664,19 @@ const criterion_loader= function(){
 			} else if (selected_measure==="Major Tournaments Played"){
 				for (let i = 0, len = buttons.length; i < len; i++ ) {
 					buttons[i].disabled = !major_comp_btn.includes(buttons[i].id);
+					selected_competitions= new Set();
 				}
 			}else if (selected_measure==="World Cup Tournaments Won"){
 				for (let i = 0, len = buttons.length; i < len; i++ ) {
 					buttons[i].disabled = true;
 					buttons[i].checked = buttons[i].id === "FIFA World Cup button";
+					selected_competitions= new Set();
 				}
 			} else {
 				for (let i = 0, len = buttons.length; i < len; i++ ) {
 					buttons[i].disabled=false;
 					buttons[i].checked=false;
+					selected_competitions= new Set();
 				}
 			}
 			stats();
