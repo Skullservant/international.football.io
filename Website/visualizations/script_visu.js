@@ -767,15 +767,13 @@ const slider_setup= function(){
 				//Updating the time pointers
 				start_time=ui.values[ 0 ];
 				end_time=ui.values[ 1 ];
+			},
+			stop:function( event, ui ) {
+				stats();
 			}
 		});
 		$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
 			" - $" + $( "#slider-range" ).slider( "values", 1 ) );
-
-		time_slider_comp=document.getElementById("slider-range").childNodes;
-		time_slider_comp.forEach((item, i) => {
-			item.addEventListener("click", event => stats());
-		});
 
 	});
 }
